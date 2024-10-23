@@ -91,12 +91,12 @@ function iniciarOuPausar() {
 
   if(intervalodId) {
     audioPausa.play(); //audio executa quando cronometro inicia
-    iniciarOuPausarImg.src = '/imagens/play_arrow.png';
+    iniciarOuPausarImg.src = './imagens/play_arrow.png';
     zerar();
     return;
   }
   audioPlay.play(); //audio executa quando cronometro para
-  iniciarOuPausarImg.src = '/imagens/pause.png';
+  iniciarOuPausarImg.src = './imagens/pause.png';
   intervalodId = setInterval(contagemRegressiva, 1000);
   iniciarOuPausarBt.textContent = 'Pausar';
 };
